@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="When your HVAC company misses a call, this system texts the caller back in seconds, finds out what's broken, and gets the estimate booked - so the job doesn't walk to the next company on the list. Dallas-Fort Worth.">
+<meta name="theme-color" content="#0a0c10">
+<title>AI Lead Recovery for HVAC Companies - Dallas-Fort Worth</title>
+<style>
+  /* ============ RESET / BASE ============ */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { overflow-x: hidden; }
+  html { scroll-behavior: smooth; }
+  :root {
+    --bg: #0a0c10;
+    --bg2: #0e1218;
+    --card: #12171f;
+    --line: #232b38;
+    --text: #f4f6f9;
+    --muted: #9aa5b5;
+    --accent: #ff7a1a;
+    --accent-soft: #ffb066;
+    --red: #ff5252;
+    --green: #4ade80;
+    --sms-ai: #2a2a32;
+    --sms-cust: #16833c;
+    --phone-black: #050506;
+  }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; }
+  a { color: var(--accent-soft); }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+  /* ============ TYPE ============ */
+  h1, h2, h3 { line-height: 1.08; letter-spacing: -0.02em; }
+  h1 { font-size: clamp(2.35rem, 8.5vw, 4.4rem); font-weight: 900; }
+  h2 { font-size: clamp(1.7rem, 5.5vw, 2.7rem); font-weight: 850; margin-bottom: 14px; }
+  h3 { font-size: 1.15rem; font-weight: 800; }
+  .eyebrow {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 14px;
+  }
+  .sub { color: var(--muted); font-size: clamp(1.05rem, 2.5vw, 1.2rem); max-width: 34em; }
+  .accent { color: var(--accent); }
+  .white { color: var(--text); }
+
+  /* ============ BUTTONS ============ */
+  .btn {
+    display: inline-block;
+    background: linear-gradient(180deg, #ff8f35, #ff6c00);
+    color: #190d02;
+    font-weight: 900;
+    font-size: 1.06rem;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    padding: 16px 28px;
+    border-radius: 12px;
+    box-shadow: 0 6px 26px rgba(255, 122, 26, 0.35), inset 0 1px 0 rgba(255,255,255,0.25);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    text-align: center;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(255, 122, 26, 0.5), inset 0 1px 0 rgba(255,255,255,0.25); }
+  .btn:active { transform: translateY(0); }
+  .btn-block { display: block; width: 100%; max-width: 380px; }
+  .micro { display: block; margin-top: 10px; font-size: 0.85rem; color: var(--muted); }
+  .micro a { color: var(--accent-soft); }
+
+  /* ============ TOP BAR ============ */
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px 0;
+  }
+  .wordmark { font-weight: 900; font-size: 1.02rem; letter-spacing: -0.01em; white-space: nowrap; }
+  .wordmark .tag {
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    border: 1px solid rgba(255,122,26,0.5);
+    border-radius: 5px;
+    padding: 2px 6px;
+    margin-left: 8px;
+    vertical-align: 2px;
+  }
+  .topbar .top-cta {
+    font-size: 0.88rem;
+    font-weight: 800;
+    color: var(--text);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    padding: 9px 16px;
+    border-radius: 10px;
+    white-space: nowrap;
+    transition: border-color 0.15s ease;
+  }
+  .topbar .top-cta:hover { border-color: var(--accent); }
+
+  /* ============ HERO ============ */
+  .hero {
+    display: grid;
+    gap: 44px;
+    padding: 40px 0 70px;
+    align-items: center;
+    background:
+      radial-gradient(60% 45% at 70% 25%, rgba(255,122,26,0.09), transparent 70%),
+      radial-gradient(45% 40% at 15% 80%, rgba(255,82,82,0.05), transparent 70%);
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--muted);
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,0.02);
+    border-radius: 999px;
+    padding: 6px 14px;
+    margin-bottom: 20px;
+  }
+  .hero-badge .rdot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--red);
+    animation: pulse 1.6s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(255,82,82,0.55); }
+    60% { box-shadow: 0 0 0 8px rgba(255,82,82,0); }
+  }
+  .hero h1 { margin-bottom: 20px; }
+  .hero .sub { margin-bottom: 24px; }
+  .ticks { list-style: none; margin: 0 0 30px; display: grid; gap: 10px; }
+  .ticks li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-weight: 700;
+    color: var(--text);
+    font-size: 0.97rem;
+  }
+  .ticks .tick {
+    flex: 0 0 22px;
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    background: rgba(74, 222, 128, 0.14);
+    color: var(--green);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.8rem; font-weight: 900;
+    margin-top: 2px;
+  }
+  .hero-point {
+    margin-top: 26px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--muted);
+  }
+
+  /* ============ PHONE MOCKUP ============ */
+  .phone-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 0;
+  }
+  .phone-wrap::before {
+    content: "";
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 420px; height: 420px;
+    max-width: 90vw;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(255,122,26,0.16) 0%, transparent 65%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .live-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    color: var(--red);
+    z-index: 1;
+  }
+  .live-badge .rdot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--red);
+    animation: pulse 1.6s infinite;
+  }
+  .phone {
+    position: relative;
+    z-index: 1;
+    width: min(322px, 88vw);
+    height: 636px;
+    background: var(--phone-black);
+    border-radius: 48px;
+    border: 3px solid #2b303b;
+    box-shadow:
+      inset 0 0 0 7px var(--phone-black),
+      0 30px 70px -20px rgba(0,0,0,0.85),
+      0 0 90px rgba(255,122,26,0.2);
+    padding: 10px;
+  }
+  .screen {
+    position: relative;
+    width: 100%; height: 100%;
+    background: #000;
+    border-radius: 38px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .notch {
+    position: absolute;
+    top: 10px; left: 50%;
+    transform: translateX(-50%);
+    width: 108px; height: 26px;
+    background: var(--phone-black);
+    border-radius: 999px;
+    z-index: 6;
+  }
+  .statusbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px 4px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .sb-right { display: flex; align-items: center; gap: 5px; }
+  .sb-right .net { font-size: 0.68rem; font-weight: 700; }
+  .sig { display: flex; align-items: flex-end; gap: 2px; height: 10px; }
+  .sig i { display: block; width: 3px; background: #fff; border-radius: 1px; }
+  .sig i:nth-child(1){height:4px} .sig i:nth-child(2){height:6px}
+  .sig i:nth-child(3){height:8px} .sig i:nth-child(4){height:10px}
+  .batt { width: 22px; height: 11px; border: 1px solid rgba(255,255,255,0.6); border-radius: 3px; padding: 1.5px; }
+  .batt i { display: block; height: 100%; width: 70%; background: #fff; border-radius: 1px; }
+  .convo-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px 12px;
+    border-bottom: 1px solid #1c1c22;
+  }
+  .avatar {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #3a4150, #262c38);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.05rem;
+  }
+  .c-name { font-size: 0.92rem; font-weight: 700; color: #fff; }
+  .c-sub { font-size: 0.72rem; color: #8b93a3; }
+  .chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding: 14px 12px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    transition: opacity 0.4s ease;
+  }
+  .chat::-webkit-scrollbar { display: none; }
+  .chat.fade { opacity: 0; }
+  .evt {
+    align-self: center;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #ff6b6b;
+    background: rgba(255,82,82,0.1);
+    border: 1px solid rgba(255,82,82,0.25);
+    padding: 4px 12px;
+    border-radius: 999px;
+  }
+  .msg {
+    max-width: 80%;
+    padding: 9px 13px;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+  }
+  .msg.ai {
+    align-self: flex-start;
+    background: var(--sms-ai);
+    color: #f2f2f7;
+    border-radius: 18px 18px 18px 5px;
+  }
+  .msg.cust {
+    align-self: flex-end;
+    background: var(--sms-cust);
+    color: #fff;
+    border-radius: 18px 18px 5px 18px;
+  }
+  .sms-link { color: #6fb8ff; text-decoration: underline; }
+  .typing {
+    align-self: flex-start;
+    background: var(--sms-ai);
+    border-radius: 18px 18px 18px 5px;
+    padding: 12px 15px;
+    display: flex;
+    gap: 4px;
+  }
+  .typing i {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: #8e8e93;
+    animation: blink 1.2s infinite;
+  }
+  .typing i:nth-child(2) { animation-delay: 0.18s; }
+  .typing i:nth-child(3) { animation-delay: 0.36s; }
+  @keyframes blink {
+    0%, 60%, 100% { opacity: 0.25; transform: translateY(0); }
+    30% { opacity: 1; transform: translateY(-3px); }
+  }
+  .pop { animation: pop 0.3s cubic-bezier(0.2, 0.9, 0.3, 1.15) both; }
+  @keyframes pop {
+    from { opacity: 0; transform: translateY(10px) scale(0.95); }
+    to { opacity: 1; transform: none; }
+  }
+  .notif {
+    position: absolute;
+    top: 44px; left: 8px; right: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(30, 34, 42, 0.96);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 11px 14px;
+    transform: translateY(-160%);
+    opacity: 0;
+    transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.1), opacity 0.35s ease;
+    z-index: 5;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  }
+  .notif.show { transform: translateY(0); opacity: 1; }
+  .notif-icon {
+    width: 32px; height: 32px;
+    flex: 0 0 32px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #ff8f35, #ff6c00);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem;
+  }
+  .notif-title { font-size: 0.78rem; font-weight: 800; color: #fff; }
+  .notif-text { font-size: 0.78rem; color: #c8cfda; }
+  .input-bar { padding: 10px 12px 8px; }
+  .fake-input {
+    border: 1px solid #2c2c33;
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    color: #6f7683;
+  }
+  .home-ind {
+    width: 110px; height: 5px; border-radius: 3px;
+    background: rgba(255,255,255,0.35);
+    margin: 2px auto 10px;
+  }
+  .demo-note { font-size: 0.82rem; color: var(--muted); z-index: 1; text-align: center; }
+
+  /* ============ SECTIONS ============ */
+  section { padding: 72px 0; }
+  .section-dark { background: var(--bg2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .section-head { max-width: 620px; margin-bottom: 40px; }
+
+  /* How it works */
+  .steps { display: grid; gap: 16px; }
+  .step {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 24px;
+    position: relative;
+  }
+  .step-num {
+    font-size: 2.1rem;
+    font-weight: 900;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  .step h3 { margin-bottom: 8px; }
+  .step p { color: var(--muted); font-size: 0.95rem; }
+  .safety {
+    margin-top: 20px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: rgba(255,82,82,0.06);
+    border: 1px solid rgba(255,82,82,0.3);
+    border-radius: 16px;
+    padding: 20px 24px;
+  }
+  .safety .icon { font-size: 1.4rem; line-height: 1.2; }
+  .safety strong { color: var(--text); }
+  .safety p { color: var(--muted); font-size: 0.95rem; }
+
+  /* The math */
+  .math-grid { display: grid; gap: 28px; }
+  .big-number-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 34px 28px;
+    text-align: center;
+    background-image: radial-gradient(70% 90% at 50% 0%, rgba(255,122,26,0.1), transparent 70%);
+  }
+  .big-number {
+    font-size: clamp(2.6rem, 9vw, 4rem);
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    color: var(--accent);
+    line-height: 1;
+  }
+  .big-number-label { margin-top: 12px; color: var(--muted); font-size: 0.95rem; max-width: 26em; margin-left: auto; margin-right: auto; }
+  .math-points { list-style: none; display: grid; gap: 14px; }
+  .math-points li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    color: var(--muted);
+    font-size: 1rem;
+  }
+  .math-points li::before {
+    content: "→";
+    color: var(--accent);
+    font-weight: 900;
+    flex: 0 0 auto;
+  }
+  .math-points li strong { color: var(--text); }
+  .math-kicker {
+    margin-top: 24px;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--text);
+  }
+
+  /* Won't do */
+  .wont { display: grid; gap: 12px; max-width: 640px; }
+  .wont-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 16px 18px;
+    font-size: 0.98rem;
+    color: var(--muted);
+  }
+  .wont-item strong { color: var(--text); }
+  .wont-item .x { color: var(--red); font-weight: 900; flex: 0 0 auto; }
+
+  /* Offer */
+  .offer-grid { display: grid; gap: 24px; }
+  .offer-card, .guarantee-card {
+    border-radius: 20px;
+    padding: 32px 28px;
+  }
+  .offer-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+  }
+  .spots-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1px solid rgba(255,122,26,0.5);
+    border-radius: 999px;
+    padding: 6px 14px;
+    margin-bottom: 18px;
+  }
+  .spots-pill .rdot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); animation: pulse 1.6s infinite; }
+  .offer-card p { color: var(--muted); margin-bottom: 14px; }
+  .offer-card p strong { color: var(--text); }
+  .guarantee-card {
+    background: linear-gradient(180deg, rgba(255,122,26,0.1), rgba(255,122,26,0.03));
+    border: 1px solid rgba(255,122,26,0.45);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .guarantee-card .shield { font-size: 2rem; line-height: 1; }
+  .guarantee-card h3 { font-size: 1.3rem; }
+  .guarantee-card p { color: var(--muted); }
+  .guarantee-card p strong { color: var(--text); }
+
+  /* Final CTA */
+  .final-cta { text-align: center; padding: 88px 0; }
+  .final-cta h2 { margin-bottom: 12px; }
+  .final-cta .sub { margin: 0 auto 30px; }
+  .final-cta .btn-block { margin: 0 auto; }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 36px 0 110px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  footer .foot-grid { display: grid; gap: 8px; }
+  footer a { color: var(--accent-soft); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  /* Sticky mobile CTA */
+  .sticky-cta {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px));
+    background: rgba(10, 12, 16, 0.92);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid var(--line);
+    transform: translateY(110%);
+    transition: transform 0.3s ease;
+    z-index: 50;
+  }
+  .sticky-cta.show { transform: translateY(0); }
+  .sticky-cta .btn { display: block; width: 100%; padding: 14px 20px; font-size: 1rem; }
+
+  /* Screen-reader only */
+  .sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* ============ DESKTOP ============ */
+  @media (min-width: 560px) {
+    .ticks { grid-template-columns: 1fr 1fr; }
+  }
+  @media (min-width: 760px) {
+    .steps { grid-template-columns: 1fr 1fr; }
+    .math-grid { grid-template-columns: 1fr 1fr; align-items: center; }
+    .offer-grid { grid-template-columns: 1.1fr 0.9fr; align-items: stretch; }
+    footer { padding-bottom: 40px; }
+    .sticky-cta { display: none; }
+  }
+  @media (min-width: 960px) {
+    .hero { grid-template-columns: 1.05fr 0.95fr; padding: 56px 0 90px; }
+    .steps { grid-template-columns: repeat(4, 1fr); }
+    .step p { font-size: 0.92rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="wrap topbar">
+  <div class="wordmark">📞 AI Lead Recovery<span class="tag">DFW</span></div>
+  <a class="top-cta" href="https://cal.com/sachid-pola-lxlvl3/15min" target="_blank" rel="noopener">Book a Demo</a>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero wrap" id="top">
+    <div>
+      <span class="hero-badge"><span class="rdot" aria-hidden="true"></span> For HVAC companies in Dallas&ndash;Fort Worth</span>
+      <h1>Missed the call?<br><span class="accent">You just lost the job.</span></h1>
+      <p class="sub">You're on a roof. Your phone's in the truck. The homeowner gets voicemail &mdash; and calls the next company on the list. This system texts them back in seconds, finds out what's broken, and books the estimate before they move on.</p>
+      <ul class="ticks">
+        <li><span class="tick" aria-hidden="true">&#10003;</span> Texts the caller back in seconds</li>
+        <li><span class="tick" aria-hidden="true">&#10003;</span> Asks what's broken and how urgent</li>
+        <li><span class="tick" aria-hidden="true">&#10003;</span> Sends them your booking link</li>
+        <li><span class="tick" aria-hidden="true">&#10003;</span> Texts you the lead summary</li>
+      </ul>
+      <a class="btn btn-block" href="https://cal.com/sachid-pola-lxlvl3/15min" target="_blank" rel="noopener">Book a 15-Minute Demo</a>
+      <span class="micro">15 minutes. I'll run it live with your company's name on it &mdash; you can play the customer and try to break it. No pressure.</span>
+      <p class="hero-point">&darr; Watch it handle a real missed call</p>
+    </div>
+
+    <!-- ============ PHONE DEMO ============ -->
+    <div class="phone-wrap">
+      <span class="live-badge"><span class="rdot" aria-hidden="true"></span>WATCH IT WORK</span>
+      <div class="phone" role="img" aria-label="Demo of a text conversation: after a missed call at 2:47 PM, the assistant texts the caller back, learns their AC died in 100-degree heat, gets the zip code 75023, sends a booking link, and notifies the owner: AC repair, emergency, 75023.">
+        <div class="screen">
+          <div class="notch" aria-hidden="true"></div>
+          <div class="statusbar" aria-hidden="true">
+            <span>2:47</span>
+            <span class="sb-right">
+              <span class="sig"><i></i><i></i><i></i><i></i></span>
+              <span class="net">5G</span>
+              <span class="batt"><i></i></span>
+            </span>
+          </div>
+          <div class="convo-head" aria-hidden="true">
+            <div class="avatar">🔧</div>
+            <div>
+              <div class="c-name">Demo Heating &amp; Air</div>
+              <div class="c-sub">Text Message &middot; SMS</div>
+            </div>
+          </div>
+          <div class="chat" id="chat" aria-hidden="true">
+            <!-- Static fallback (shown if JS is off; JS clears and animates) -->
+            <div class="evt">Missed Call - 2:47 PM</div>
+            <div class="msg ai">Hi, this is the assistant for Demo Heating &amp; Air - sorry we missed your call! What's going on with your system?</div>
+            <div class="msg cust">AC died. its 100 degrees in here</div>
+            <div class="msg ai">No AC in this heat is an emergency. What zip code are you in?</div>
+            <div class="msg cust">75023</div>
+            <div class="msg ai">You're covered. Grab a time here and the owner will follow up shortly: <span class="sms-link">demoheating.com/book</span></div>
+          </div>
+          <div class="notif" id="notif" aria-hidden="true">
+            <div class="notif-icon">🔔</div>
+            <div>
+              <div class="notif-title">Owner notified</div>
+              <div class="notif-text">AC repair - emergency - 75023</div>
+            </div>
+          </div>
+          <div class="input-bar" aria-hidden="true">
+            <div class="fake-input">Text Message</div>
+          </div>
+          <div class="home-ind" aria-hidden="true"></div>
+        </div>
+      </div>
+      <p class="demo-note">Runs on a loop. This is the exact flow your missed callers get.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section-dark" id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2>Four steps. Zero apps to learn.</h2>
+        <p class="sub">No new number, no app, nothing to install. Setup is a five-minute call-forwarding change I walk you through once.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>A call gets missed</h3>
+          <p>You're under a house or on a roof. The phone rings out. Normally that's the last you ever hear from them.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>The text goes out in seconds</h3>
+          <p>The caller gets a text back while your competitor's phone is still ringing. They know you saw them.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>It asks the right questions</h3>
+          <p>What's broken. How urgent. What zip code. It never quotes prices and never promises arrival times &mdash; that's your call, not a computer's.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>You get the lead</h3>
+          <p>The caller gets a booking link for an estimate. You get one text: what's broken, how bad, where. Call back when you're off the roof.</p>
+        </div>
+      </div>
+      <div class="safety">
+        <span class="icon" aria-hidden="true">⚠️</span>
+        <p><strong>Safety comes first.</strong> If a caller mentions a gas smell, the system drops everything to tell them to shut it off, get out, and call 911 first. Booking can wait. Safety can't.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE MATH ============ -->
+  <section id="math">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The math</span>
+        <h2>One missed call can be a $5,000&ndash;$12,000 job.</h2>
+        <p class="sub">How many calls rang out at your shop last week?</p>
+      </div>
+      <div class="math-grid">
+        <div class="big-number-card">
+          <div class="big-number">$5,000&ndash;$12,000</div>
+          <p class="big-number-label">What a single missed AC-replacement call can be worth. And in a Texas summer, those are exactly the calls flooding in.</p>
+        </div>
+        <div>
+          <ul class="math-points">
+            <li><strong>Ask around &mdash; most homeowners hire whoever responds first.</strong> Not whoever's best. First.</li>
+            <li><strong>Most callers who hit voicemail don't leave a message.</strong> They hang up and dial the next company on Google.</li>
+            <li>You don't lose those jobs on price or quality. <strong>You lose them on speed</strong> &mdash; while you're busy doing good work for somebody else.</li>
+          </ul>
+          <p class="math-kicker">This doesn't have to catch every call. If it catches one job a year you would've lost, the math takes care of itself.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT IT WON'T DO ============ -->
+  <section class="section-dark" id="wont">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Straight talk</span>
+        <h2>What it will never do</h2>
+        <p class="sub">You've been burned by marketing guys before. So here are the hard rules built into the system.</p>
+      </div>
+      <div class="wont">
+        <div class="wont-item"><span class="x" aria-hidden="true">✕</span><span><strong>Never quotes your prices.</strong> Pricing is your business. It books the estimate and gets out of the way.</span></div>
+        <div class="wont-item"><span class="x" aria-hidden="true">✕</span><span><strong>Never promises arrival times.</strong> It won't commit your trucks to anything. You set the schedule.</span></div>
+        <div class="wont-item"><span class="x" aria-hidden="true">✕</span><span><strong>Never pretends to be you.</strong> It says it's the assistant for your company. No games.</span></div>
+        <div class="wont-item"><span class="x" aria-hidden="true">✕</span><span><strong>Never replaces your people.</strong> It hands you a qualified lead. Humans do the actual work.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOUNDING OFFER ============ -->
+  <section id="offer">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Founding-client offer</span>
+        <h2>I'm taking on 3 founding companies in DFW.</h2>
+      </div>
+      <div class="offer-grid">
+        <div class="offer-card">
+          <span class="spots-pill"><span class="rdot" aria-hidden="true"></span>3 founding spots</span>
+          <p><strong>Here's the deal.</strong> Three HVAC companies in Dallas&ndash;Fort Worth get the full system at a founding rate. In exchange, when it captures leads for you, I get to publish the numbers as a case study.</p>
+          <p><strong>Why so honest?</strong> You'll notice there are no testimonials on this page. That's because I don't have any yet &mdash; and I'm not going to invent them. The demo above is a replay of exactly what the system sends &mdash; on our call I'll run it live and you can play the customer. The guarantee below is real, and the founding deal exists so the proof comes from your business, not stock photos.</p>
+          <p>Once the three spots are filled, the founding rate goes with them.</p>
+        </div>
+        <div class="guarantee-card">
+          <span class="shield" aria-hidden="true">🛡️</span>
+          <h3>The guarantee</h3>
+          <p><strong>14-day install trial.</strong> I set it up on your line and we let your real missed calls run through it. If it doesn't text back and qualify at least one real missed caller in those 14 days, <strong>you pay nothing.</strong></p>
+          <p>If it does what you just watched it do, we keep going. Simple.</p>
+        </div>
+      </div>
+      <div style="margin-top: 34px;">
+        <a class="btn btn-block" href="https://cal.com/sachid-pola-lxlvl3/15min" target="_blank" rel="noopener">Book a 15-Minute Demo</a>
+        <span class="micro">You'll watch it qualify a missed call live &mdash; with your company's name on it.</span>
+        <span class="micro">Rather email first? <a href="mailto:sachidpola4@gmail.com">sachidpola4@gmail.com</a></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final-cta section-dark">
+    <div class="wrap">
+      <h2>Your phone will ring this week.<br><span class="accent">Will you catch it?</span></h2>
+      <p class="sub">Somebody's going to miss that call &mdash; you or your competitor. Fifteen minutes tells you if this is worth having.</p>
+      <a class="btn btn-block" href="https://cal.com/sachid-pola-lxlvl3/15min" target="_blank" rel="noopener">Book a 15-Minute Demo</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div><strong>AI Lead Recovery</strong> &mdash; missed-call recovery for HVAC companies.</div>
+    <div>Questions? <a href="mailto:sachidpola4@gmail.com">sachidpola4@gmail.com</a></div>
+    <div>Built by Sachid Pola - Dallas, TX. Serving Dallas&ndash;Fort Worth.</div>
+  </div>
+</footer>
+
+<!-- Sticky mobile CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <a class="btn" href="https://cal.com/sachid-pola-lxlvl3/15min" target="_blank" rel="noopener">Book a 15-Minute Demo</a>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var chat = document.getElementById("chat");
+  var notif = document.getElementById("notif");
+  var phone = document.querySelector(".phone");
+
+  var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Sticky CTA: show once the hero is scrolled past (mobile only via CSS)
+  var sticky = document.getElementById("stickyCta");
+  var hero = document.querySelector(".hero");
+  if ("IntersectionObserver" in window && sticky && hero) {
+    new IntersectionObserver(function (entries) {
+      sticky.classList.toggle("show", !entries[0].isIntersecting);
+    }, { threshold: 0.05 }).observe(hero);
+  }
+
+  if (!chat || !notif) return;
+
+  // Reduced motion: keep the static fallback conversation, show the banner, done.
+  if (reduced) {
+    notif.classList.add("show");
+    return;
+  }
+
+  // JS is running and motion is allowed: clear the no-JS fallback right away
+  // so the demo always starts from a clean thread (no flash of the full convo).
+  chat.innerHTML = "";
+
+  // Only animate while the phone is on screen (saves battery, keeps loop in sync with viewer)
+  var inView = true;
+  if ("IntersectionObserver" in window && phone) {
+    inView = false;
+    new IntersectionObserver(function (entries) {
+      inView = entries[0].isIntersecting;
+    }, { threshold: 0.15 }).observe(phone);
+  }
+
+  function sleep(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
+
+  function waitVisible() {
+    if (inView) return Promise.resolve();
+    return sleep(350).then(waitVisible);
+  }
+
+  function scrollChat() { chat.scrollTop = chat.scrollHeight; }
+
+  function addEvent(text) {
+    var el = document.createElement("div");
+    el.className = "evt pop";
+    el.textContent = text;
+    chat.appendChild(el);
+    scrollChat();
+  }
+
+  function addMsg(cls, html) {
+    var el = document.createElement("div");
+    el.className = "msg " + cls + " pop";
+    el.innerHTML = html;
+    chat.appendChild(el);
+    scrollChat();
+    return el;
+  }
+
+  function showTyping() {
+    var el = document.createElement("div");
+    el.className = "typing pop";
+    el.innerHTML = "<i></i><i></i><i></i>";
+    chat.appendChild(el);
+    scrollChat();
+    return el;
+  }
+
+  var AI_1 = "Hi, this is the assistant for Demo Heating &amp; Air - sorry we missed your call! What's going on with your system?";
+  var CUST_1 = "AC died. its 100 degrees in here";
+  var AI_2 = "No AC in this heat is an emergency. What zip code are you in?";
+  var CUST_2 = "75023";
+  var AI_3 = "You're covered. Grab a time here and the owner will follow up shortly: <span class=\"sms-link\">demoheating.com/book</span>";
+
+  async function playOnce() {
+    await sleep(700);
+
+    addEvent("Missed Call - 2:47 PM");
+    await sleep(1100);
+
+    // AI message 1
+    var t = showTyping();
+    await sleep(1500);
+    t.remove();
+    addMsg("ai", AI_1);
+    await sleep(1700);
+
+    // Customer reply 1 (delay = them typing; no indicator — SMS doesn't show one)
+    await sleep(1500);
+    addMsg("cust", CUST_1);
+    await sleep(900);
+
+    // AI message 2
+    t = showTyping();
+    await sleep(1300);
+    t.remove();
+    addMsg("ai", AI_2);
+    await sleep(1400);
+
+    // Customer reply 2
+    await sleep(1100);
+    addMsg("cust", CUST_2);
+    await sleep(900);
+
+    // AI message 3 with booking link
+    t = showTyping();
+    await sleep(1400);
+    t.remove();
+    addMsg("ai", AI_3);
+    await sleep(1400);
+
+    // Owner notification banner
+    notif.classList.add("show");
+    await sleep(3000); // hold the finished conversation
+
+    // Soft reset: fade the thread out instead of yanking it away
+    chat.classList.add("fade");
+    notif.classList.remove("show");
+    await sleep(450);
+    chat.innerHTML = "";
+    chat.classList.remove("fade");
+    await sleep(250);
+  }
+
+  async function loop() {
+    for (;;) {
+      await waitVisible();
+      await playOnce();
+    }
+  }
+
+  loop();
+})();
+</script>
+
+</body>
+</html>
