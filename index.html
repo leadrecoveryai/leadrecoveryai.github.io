@@ -3,29 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="LeadRecovery AI automates your whole front office: every call answered 24/7, every missed caller texted back in seconds, every lead followed up, every appointment reminded. For HVAC & home-service companies.">
-<meta name="theme-color" content="#0a0c10">
-<title>LeadRecovery AI — AI Automation for Home-Service Companies</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff8c33'/%3E%3Cstop offset='1' stop-color='%23ff6a00'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='15' fill='url(%23g)'/%3E%3Cpath d='M32 13c-10.5 0-19 7.2-19 16.1 0 5.1 2.8 9.6 7.2 12.5-.3 2.4-1.3 4.6-3 6.3 3.4-.2 6.5-1.4 9-3.3 1.8.5 3.8.7 5.8.7 10.5 0 19-7.2 19-16.2S42.5 13 32 13z' fill='%23fff'/%3E%3Cpath d='M34.6 17.8l-8.2 12.4h5.4l-2.4 9.9 8.8-12.9h-5.5l1.9-9.4z' fill='%23ff6a00'/%3E%3C/svg%3E">
+<meta name="description" content="Pola Comms — an AI agent that texts your missed callers back in seconds, qualifies the job, and books the appointment. For HVAC & home-service companies. $850/month flat.">
+<meta name="theme-color" content="#142952">
+<title>Pola Comms — AI Lead Recovery for Home-Service Companies</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234f7fdd'/%3E%3Cstop offset='1' stop-color='%231d56c9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='15' fill='url(%23g)'/%3E%3Cpath d='M32 13c-10.5 0-19 7.2-19 16.1 0 5.1 2.8 9.6 7.2 12.5-.3 2.4-1.3 4.6-3 6.3 3.4-.2 6.5-1.4 9-3.3 1.8.5 3.8.7 5.8.7 10.5 0 19-7.2 19-16.2S42.5 13 32 13z' fill='%23fff'/%3E%3Cpath d='M34.6 17.8l-8.2 12.4h5.4l-2.4 9.9 8.8-12.9h-5.5l1.9-9.4z' fill='%231d56c9'/%3E%3C/svg%3E">
 <style>
-  /* ============ RESET / BASE ============ */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { overflow-x: hidden; }
   html { scroll-behavior: smooth; }
   :root {
-    --bg: #0a0c10;
-    --bg2: #0e1218;
-    --card: #12171f;
-    --line: #232b38;
-    --text: #f4f6f9;
-    --muted: #9aa5b5;
-    --accent: #ff7a1a;
-    --accent-soft: #ffb066;
-    --red: #ff5252;
-    --green: #4ade80;
-    --sms-ai: #2a2a32;
-    --sms-cust: #16833c;
-    --phone-black: #050506;
+    --bg: #ffffff;
+    --bg-soft: #f6f7f9;
+    --bg-gray: #eff1f5;
+    --line: #dcdfe5;
+    --text: #1b2232;
+    --muted: #626d84;
+    --accent: #1d56c9;
+    --accent-soft: #4f7fdd;
+    --navy: #142952;
+    --navy-deep: #0f1424;
+    --green: #16a34a;
+    --red: #e11d48;
+    --phone-black: #14151a;
+    --sms-ai: #26262a;
+    --sms-cust: #1d56c9;
   }
   body {
     background: var(--bg);
@@ -34,165 +35,128 @@
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
   }
-  img { max-width: 100%; }
-  a { color: var(--accent-soft); }
-  :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
-
-  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-
-  /* ============ TYPE ============ */
-  h1, h2, h3 { line-height: 1.08; letter-spacing: -0.02em; }
-  h1 { font-size: clamp(2.35rem, 8.5vw, 4.4rem); font-weight: 900; }
-  h2 { font-size: clamp(1.7rem, 5.5vw, 2.7rem); font-weight: 850; margin-bottom: 14px; }
-  h3 { font-size: 1.15rem; font-weight: 800; }
-  .eyebrow {
-    display: inline-block;
-    font-size: 0.78rem;
-    font-weight: 800;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 14px;
-  }
-  .sub { color: var(--muted); font-size: clamp(1.05rem, 2.5vw, 1.2rem); max-width: 34em; }
-  .accent { color: var(--accent); }
-  .white { color: var(--text); }
-
-  /* ============ BUTTONS ============ */
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  .narrow { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: clamp(2.3rem, 6.5vw, 3.8rem); line-height: 1.06; letter-spacing: -0.03em; font-weight: 900; }
+  h2 { font-size: clamp(1.6rem, 4vw, 2.4rem); line-height: 1.12; letter-spacing: -0.02em; font-weight: 900; }
+  h3 { font-size: 1.05rem; font-weight: 800; }
+  .sub { font-size: 1.08rem; }
   .btn {
     display: inline-block;
-    background: linear-gradient(180deg, #ff8f35, #ff6c00);
-    color: #190d02;
-    font-weight: 900;
-    font-size: 1.06rem;
-    letter-spacing: 0.01em;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 800;
+    font-size: 1rem;
     text-decoration: none;
-    padding: 16px 28px;
+    padding: 15px 30px;
     border-radius: 12px;
-    box-shadow: 0 6px 26px rgba(255, 122, 26, 0.35), inset 0 1px 0 rgba(255,255,255,0.25);
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-    text-align: center;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    box-shadow: 0 6px 20px -6px rgba(29, 86, 201, 0.45);
   }
-  .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(255, 122, 26, 0.5), inset 0 1px 0 rgba(255,255,255,0.25); }
-  .btn:active { transform: translateY(0); }
-  .btn-block { display: block; width: 100%; max-width: 380px; }
-  .micro { display: block; margin-top: 10px; font-size: 0.85rem; color: var(--muted); }
-  .micro a { color: var(--accent-soft); }
+  .btn:hover { transform: translateY(-2px); background: #1a4cb2; }
+  .btn-light { background: #fff; color: var(--navy); box-shadow: 0 8px 24px -8px rgba(0,0,0,0.45); }
+  .btn-light:hover { background: #eef2fa; }
+  .micro { display: block; margin-top: 12px; font-size: 0.84rem; }
 
-  /* ============ TOP BAR ============ */
+  /* ============ NAV ============ */
   .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .topbar-in {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 12px 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 12px;
-    padding: 16px 0;
+    gap: 16px;
   }
   .wordmark { font-weight: 900; font-size: 1.05rem; letter-spacing: -0.01em; white-space: nowrap;
-    display: flex; align-items: center; gap: 9px; }
-  .wordmark .logo { width: 30px; height: 30px; flex: 0 0 auto; border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(255, 106, 0, 0.35); }
+    display: flex; align-items: center; gap: 9px; color: var(--text); text-decoration: none; }
+  .wordmark .logo { width: 30px; height: 30px; flex: 0 0 auto; border-radius: 8px; }
   .wordmark em { font-style: normal; color: var(--accent); margin-left: 1px; }
-  .wordmark .tag {
-    font-size: 0.68rem;
-    font-weight: 800;
-    letter-spacing: 0.1em;
-    color: var(--accent);
-    border: 1px solid rgba(255,122,26,0.5);
-    border-radius: 5px;
-    padding: 2px 6px;
-    margin-left: 8px;
-    vertical-align: 2px;
-  }
-  .topbar .top-cta {
+  .nav-links { display: none; gap: 26px; }
+  .nav-links a { color: var(--muted); text-decoration: none; font-weight: 700; font-size: 0.92rem; }
+  .nav-links a:hover { color: var(--text); }
+  .top-cta {
     font-size: 0.88rem;
     font-weight: 800;
-    color: var(--text);
+    color: #fff;
+    background: var(--accent);
     text-decoration: none;
-    border: 1px solid var(--line);
-    padding: 9px 16px;
+    padding: 10px 18px;
     border-radius: 10px;
     white-space: nowrap;
-    transition: border-color 0.15s ease;
   }
-  .topbar .top-cta:hover { border-color: var(--accent); }
+  .top-cta:hover { background: #1a4cb2; }
+  @media (min-width: 760px) { .nav-links { display: flex; } }
 
-  /* ============ HERO ============ */
+  /* ============ HERO — full-height navy, centered ============ */
   .hero {
-    display: grid;
-    gap: 44px;
-    padding: 40px 0 70px;
+    min-height: calc(100vh - 60px);
+    display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     background:
-      radial-gradient(60% 45% at 70% 25%, rgba(255,122,26,0.09), transparent 70%),
-      radial-gradient(45% 40% at 15% 80%, rgba(255,82,82,0.05), transparent 70%);
+      radial-gradient(70% 60% at 50% 0%, rgba(79, 127, 221, 0.25), transparent 70%),
+      linear-gradient(180deg, var(--navy), #102143);
+    color: #fff;
+    padding: 80px 24px;
   }
+  .hero-in { max-width: 820px; }
   .hero-badge {
     display: inline-flex;
     align-items: center;
     gap: 8px;
     font-size: 0.8rem;
     font-weight: 700;
-    color: var(--muted);
-    border: 1px solid var(--line);
-    background: rgba(255,255,255,0.02);
+    color: #b9c6e2;
+    border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.06);
     border-radius: 999px;
     padding: 6px 14px;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
   }
   .hero-badge .rdot {
     width: 8px; height: 8px; border-radius: 50%;
-    background: var(--red);
+    background: #ff6b81;
     animation: pulse 1.6s infinite;
   }
   @keyframes pulse {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(255,82,82,0.55); }
-    60% { box-shadow: 0 0 0 8px rgba(255,82,82,0); }
+    0%, 100% { box-shadow: 0 0 0 0 rgba(255, 107, 129, 0.45); }
+    60% { box-shadow: 0 0 0 8px rgba(255, 107, 129, 0); }
   }
-  .hero h1 { margin-bottom: 20px; }
-  .hero .sub { margin-bottom: 24px; }
-  .ticks { list-style: none; margin: 0 0 30px; display: grid; gap: 10px; }
-  .ticks li {
-    display: flex;
-    gap: 10px;
-    align-items: flex-start;
-    font-weight: 700;
-    color: var(--text);
-    font-size: 0.97rem;
-  }
-  .ticks .tick {
-    flex: 0 0 22px;
-    width: 22px; height: 22px;
-    border-radius: 50%;
-    background: rgba(74, 222, 128, 0.14);
-    color: var(--green);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 0.8rem; font-weight: 900;
-    margin-top: 2px;
-  }
-  .hero-point {
-    margin-top: 26px;
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--muted);
-  }
+  .hero h1 { color: #fff; margin-bottom: 22px; }
+  .hero .sub { color: #b9c6e2; max-width: 36em; margin: 0 auto 34px; }
+  .hero .micro { color: #8fa0c0; }
+  .hero-scroll { margin-top: 46px; color: #8fa0c0; font-size: 0.85rem; font-weight: 700; }
 
-  /* ============ PHONE MOCKUP ============ */
+  /* ============ DEMO BAND — white, centered phone ============ */
+  .demo-band { padding: 90px 24px; background: var(--bg); text-align: center; }
+  .demo-band h2 { margin-bottom: 12px; }
+  .demo-band .sub { color: var(--muted); max-width: 34em; margin: 0 auto 44px; }
+
   .phone-wrap {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    padding: 10px 0;
   }
   .phone-wrap::before {
     content: "";
     position: absolute;
     top: 50%; left: 50%;
-    width: 420px; height: 420px;
+    width: 460px; height: 460px;
     max-width: 90vw;
     transform: translate(-50%, -50%);
-    background: radial-gradient(circle, rgba(255,122,26,0.16) 0%, transparent 65%);
+    background: radial-gradient(circle, rgba(29, 86, 201, 0.10) 0%, transparent 65%);
     pointer-events: none;
     z-index: 0;
   }
@@ -203,7 +167,7 @@
     font-size: 0.72rem;
     font-weight: 900;
     letter-spacing: 0.18em;
-    color: var(--red);
+    color: var(--accent);
     z-index: 1;
   }
   .live-badge .rdot {
@@ -221,9 +185,9 @@
     border: 3px solid #2b303b;
     box-shadow:
       inset 0 0 0 7px var(--phone-black),
-      0 30px 70px -20px rgba(0,0,0,0.85),
-      0 0 90px rgba(255,122,26,0.2);
+      0 30px 70px -20px rgba(20, 41, 82, 0.45);
     padding: 10px;
+    text-align: left;
   }
   .screen {
     position: relative;
@@ -317,7 +281,7 @@
     color: #fff;
     border-radius: 18px 18px 5px 18px;
   }
-  .sms-link { color: #6fb8ff; text-decoration: underline; }
+  .sms-link { color: #8db4ff; text-decoration: underline; }
   .typing {
     align-self: flex-start;
     background: var(--sms-ai);
@@ -364,7 +328,7 @@
     width: 32px; height: 32px;
     flex: 0 0 32px;
     border-radius: 8px;
-    background: linear-gradient(180deg, #ff8f35, #ff6c00);
+    background: linear-gradient(180deg, #4f7fdd, #1d56c9);
     display: flex; align-items: center; justify-content: center;
     font-size: 1rem;
   }
@@ -383,220 +347,164 @@
     background: rgba(255,255,255,0.35);
     margin: 2px auto 10px;
   }
-  .demo-note { font-size: 0.82rem; color: var(--muted); z-index: 1; text-align: center; }
+  .demo-note { font-size: 0.82rem; color: var(--muted); z-index: 1; }
 
-  /* ============ SECTIONS ============ */
-  section { padding: 72px 0; }
-  .section-dark { background: var(--bg2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-  .section-head { max-width: 620px; margin-bottom: 40px; }
+  /* ============ NARRATIVE — white centered prose ============ */
+  .narrative { padding: 100px 24px; background: var(--bg); text-align: center; }
+  .narrative h2 { margin-bottom: 18px; }
+  .narrative p { color: var(--muted); font-size: 1.12rem; max-width: 44em; margin: 0 auto; }
+  .narrative p + p { margin-top: 16px; }
+  .narrative strong { color: var(--text); }
 
-  /* How it works */
-  .steps { display: grid; gap: 16px; }
-  .step {
-    background: var(--card);
+  /* ============ NAVY FEATURES — 4 glass cards ============ */
+  .features {
+    padding: 96px 24px;
+    background: linear-gradient(180deg, var(--navy), #102143);
+    color: #fff;
+    text-align: center;
+  }
+  .features h2 { color: #fff; margin-bottom: 14px; }
+  .features .sub { color: #b9c6e2; max-width: 38em; margin: 0 auto 48px; }
+  .feature-grid { display: grid; gap: 16px; max-width: 1080px; margin: 0 auto; text-align: left; }
+  .fcard {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 26px 24px;
+  }
+  .fcard .ficon { font-size: 1.5rem; margin-bottom: 14px; }
+  .fcard h3 { color: #fff; margin-bottom: 8px; }
+  .fcard p { color: #b9c6e2; font-size: 0.94rem; }
+  @media (min-width: 640px) { .feature-grid { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 960px) { .feature-grid { grid-template-columns: repeat(4, 1fr); } }
+
+  /* ============ GRAY PROCESS — steps cards ============ */
+  .process { padding: 96px 24px; background: var(--bg-gray); text-align: center; }
+  .process h2 { margin-bottom: 14px; }
+  .process .sub { color: var(--muted); max-width: 38em; margin: 0 auto 48px; }
+  .step-grid { display: grid; gap: 16px; max-width: 1080px; margin: 0 auto; text-align: left; }
+  .scard {
+    background: #fff;
     border: 1px solid var(--line);
     border-radius: 16px;
-    padding: 24px;
-    position: relative;
+    padding: 26px 24px;
+    box-shadow: 0 2px 10px rgba(20, 41, 82, 0.04);
   }
-  .step-num {
-    font-size: 2.1rem;
+  .scard .snum {
+    font-size: 2rem;
     font-weight: 900;
     color: var(--accent);
     line-height: 1;
     margin-bottom: 12px;
   }
-  .step h3 { margin-bottom: 8px; }
-  .step p { color: var(--muted); font-size: 0.95rem; }
-  .safety {
-    margin-top: 20px;
+  .scard h3 { margin-bottom: 8px; }
+  .scard p { color: var(--muted); font-size: 0.94rem; }
+  @media (min-width: 640px) { .step-grid { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 960px) { .step-grid { grid-template-columns: repeat(4, 1fr); } }
+  .rules { max-width: 720px; margin: 44px auto 0; display: grid; gap: 10px; text-align: left; }
+  .rule-item {
     display: flex;
-    gap: 14px;
+    gap: 12px;
     align-items: flex-start;
-    background: rgba(255,82,82,0.06);
-    border: 1px solid rgba(255,82,82,0.3);
-    border-radius: 16px;
-    padding: 20px 24px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px 18px;
+    color: var(--muted);
+    font-size: 0.95rem;
   }
-  .safety .icon { font-size: 1.4rem; line-height: 1.2; }
-  .safety strong { color: var(--text); }
-  .safety p { color: var(--muted); font-size: 0.95rem; }
+  .rule-item strong { color: var(--text); }
+  .rule-item .x { color: var(--red); font-weight: 900; flex: 0 0 auto; }
 
-  /* The math */
-  .math-grid { display: grid; gap: 28px; }
+  /* ============ MATH BAND — soft gray ============ */
+  .math { padding: 96px 24px; background: var(--bg-soft); text-align: center; }
+  .math h2 { margin-bottom: 14px; }
+  .math .sub { color: var(--muted); margin: 0 auto 44px; max-width: 34em; }
+  .math-grid { display: grid; gap: 28px; max-width: 1000px; margin: 0 auto; align-items: center; text-align: left; }
   .big-number-card {
-    background: var(--card);
+    background: #fff;
     border: 1px solid var(--line);
     border-radius: 20px;
     padding: 34px 28px;
     text-align: center;
-    background-image: radial-gradient(70% 90% at 50% 0%, rgba(255,122,26,0.1), transparent 70%);
+    box-shadow: 0 2px 10px rgba(20, 41, 82, 0.04);
   }
   .big-number {
-    font-size: clamp(2.6rem, 9vw, 4rem);
+    font-size: clamp(2.4rem, 8vw, 3.6rem);
     font-weight: 900;
     letter-spacing: -0.03em;
     color: var(--accent);
     line-height: 1;
   }
-  .big-number-label { margin-top: 12px; color: var(--muted); font-size: 0.95rem; max-width: 26em; margin-left: auto; margin-right: auto; }
+  .big-number-label { margin-top: 12px; color: var(--muted); font-size: 0.94rem; }
   .math-points { list-style: none; display: grid; gap: 14px; }
-  .math-points li {
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-    color: var(--muted);
-    font-size: 1rem;
-  }
-  .math-points li::before {
-    content: "→";
-    color: var(--accent);
-    font-weight: 900;
-    flex: 0 0 auto;
-  }
+  .math-points li { display: flex; gap: 12px; align-items: flex-start; color: var(--muted); font-size: 1rem; }
+  .math-points li::before { content: "→"; color: var(--accent); font-weight: 900; flex: 0 0 auto; }
   .math-points li strong { color: var(--text); }
-  .math-kicker {
-    margin-top: 24px;
-    font-size: 1.15rem;
-    font-weight: 800;
-    color: var(--text);
-  }
+  .math-kicker { margin-top: 22px; font-size: 1.12rem; font-weight: 800; color: var(--text); }
+  @media (min-width: 760px) { .math-grid { grid-template-columns: 1fr 1fr; } }
 
-  /* Won't do */
-  .wont { display: grid; gap: 12px; max-width: 640px; }
-  .wont-item {
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 16px 18px;
-    font-size: 0.98rem;
-    color: var(--muted);
+  /* ============ PRICING — white centered ============ */
+  .pricing { padding: 96px 24px; background: var(--bg); text-align: center; }
+  .pricing h2 { margin-bottom: 44px; }
+  .price-card {
+    max-width: 520px;
+    margin: 0 auto;
+    background: #fff;
+    border: 2px solid var(--accent);
+    border-radius: 24px;
+    padding: 42px 36px;
+    box-shadow: 0 20px 50px -20px rgba(29, 86, 201, 0.35);
   }
-  .wont-item strong { color: var(--text); }
-  .wont-item .x { color: var(--red); font-weight: 900; flex: 0 0 auto; }
+  .price-big { font-size: clamp(3rem, 10vw, 4.4rem); font-weight: 900; letter-spacing: -0.04em; line-height: 1; }
+  .price-big span { font-size: 1.2rem; font-weight: 800; color: var(--muted); letter-spacing: 0; }
+  .price-tag { font-size: 0.95rem; font-weight: 800; color: var(--accent); margin-top: 8px; }
+  .price-list { list-style: none; margin: 28px 0 30px; display: grid; gap: 11px; text-align: left; }
+  .price-list li { display: flex; gap: 10px; align-items: flex-start; font-size: 0.97rem; font-weight: 600; }
+  .price-list .tick {
+    flex: 0 0 22px; width: 22px; height: 22px; border-radius: 50%;
+    background: rgba(22, 163, 74, 0.12); color: var(--green);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.8rem; font-weight: 900; margin-top: 1px;
+  }
+  .price-note { margin-top: 14px; font-size: 0.85rem; color: var(--muted); }
 
-  /* Offer */
-  .offer-grid { display: grid; gap: 24px; }
-  .offer-card, .guarantee-card {
-    border-radius: 20px;
-    padding: 32px 28px;
+  /* ============ FINAL CTA — navy centered ============ */
+  .final-cta {
+    padding: 110px 24px;
+    background: linear-gradient(180deg, var(--navy), #102143);
+    color: #fff;
+    text-align: center;
   }
-  .offer-card {
-    background: var(--card);
-    border: 1px solid var(--line);
-  }
-  .spots-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.78rem;
-    font-weight: 900;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--accent);
-    border: 1px solid rgba(255,122,26,0.5);
-    border-radius: 999px;
-    padding: 6px 14px;
-    margin-bottom: 18px;
-  }
-  .spots-pill .rdot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); animation: pulse 1.6s infinite; }
-  .offer-card p { color: var(--muted); margin-bottom: 14px; }
-  .offer-card p strong { color: var(--text); }
-  .guarantee-card {
-    background: linear-gradient(180deg, rgba(255,122,26,0.1), rgba(255,122,26,0.03));
-    border: 1px solid rgba(255,122,26,0.45);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  .guarantee-card .shield { font-size: 2rem; line-height: 1; }
-  .guarantee-card h3 { font-size: 1.3rem; }
-  .guarantee-card p { color: var(--muted); }
-  .guarantee-card p strong { color: var(--text); }
+  .final-cta h2 { color: #fff; margin-bottom: 14px; }
+  .final-cta .sub { color: #b9c6e2; margin: 0 auto 32px; max-width: 32em; }
+  .final-cta .micro { color: #8fa0c0; }
 
-  /* Final CTA */
-  .final-cta { text-align: center; padding: 88px 0; }
-  .final-cta h2 { margin-bottom: 12px; }
-  .final-cta .sub { margin: 0 auto 30px; }
-  .final-cta .btn-block { margin: 0 auto; }
-
-  /* Footer */
-  footer {
-    border-top: 1px solid var(--line);
-    padding: 36px 0 110px;
-    color: var(--muted);
-    font-size: 0.9rem;
+  /* ============ FOOTER — near-black navy, columns ============ */
+  footer { background: var(--navy-deep); color: #b3bbcc; padding: 56px 24px 100px; font-size: 0.92rem; }
+  .foot-grid { max-width: 1080px; margin: 0 auto; display: grid; gap: 36px; }
+  .foot-brand .wordmark { color: #fff; margin-bottom: 12px; }
+  .foot-brand p { color: #8fa0c0; max-width: 26em; font-size: 0.9rem; }
+  .foot-col h4 {
+    font-size: 0.75rem; font-weight: 800; letter-spacing: 0.14em;
+    text-transform: uppercase; color: #6d7fa3; margin-bottom: 14px;
   }
-  footer .foot-grid { display: grid; gap: 8px; }
-  footer a { color: var(--accent-soft); text-decoration: none; }
-  footer a:hover { text-decoration: underline; }
+  .foot-col ul { list-style: none; display: grid; gap: 9px; }
+  footer a { color: #d7dff0; text-decoration: none; font-weight: 600; }
+  footer a:hover { color: #fff; }
+  @media (min-width: 760px) { .foot-grid { grid-template-columns: 1.4fr 1fr 1fr; } footer { padding-bottom: 56px; } }
 
-  /* Sticky mobile CTA */
   .sticky-cta {
     position: fixed;
-    left: 0; right: 0; bottom: 0;
-    padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px));
-    background: rgba(10, 12, 16, 0.92);
-    backdrop-filter: blur(8px);
-    border-top: 1px solid var(--line);
-    transform: translateY(110%);
-    transition: transform 0.3s ease;
+    left: 16px; right: 16px; bottom: 14px;
     z-index: 50;
+    display: none;
+    transform: translateY(140%);
+    transition: transform 0.35s ease;
   }
-  .sticky-cta.show { transform: translateY(0); }
-  .sticky-cta .btn { display: block; width: 100%; padding: 14px 20px; font-size: 1rem; }
-
-  /* Screen-reader only */
-  .sr-only {
-    position: absolute;
-    width: 1px; height: 1px;
-    padding: 0; margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-    border: 0;
-  }
-
-  /* ============ MOBILE: center everything ============ */
-  @media (max-width: 759px) {
-    .hero > div:first-child { text-align: center; }
-    .hero-badge { margin-left: auto; margin-right: auto; }
-    .ticks { justify-items: center; }
-    .ticks li { text-align: left; }
-    .section-head { text-align: center; }
-    .section-head h2, .section-head .sub, .eyebrow { margin-left: auto; margin-right: auto; }
-    .step { text-align: center; }
-    .step-num { margin-left: auto; margin-right: auto; }
-    .safety { text-align: center; flex-direction: column; align-items: center; }
-    .math-points, .math-kicker { text-align: center; }
-    .big-number-card { text-align: center; }
-    .wont-item { text-align: left; }
-    .final-cta { text-align: center; }
-    footer .foot-grid { text-align: center; }
-    .hero .micro, .hero-point { display: block; text-align: center; }
-    .btn-block { margin-left: auto; margin-right: auto; }
-    .section-head h2 + .rule, .wrap > .accent-rule { margin-left: auto; margin-right: auto; }
-  }
-
-  /* ============ DESKTOP ============ */
-  @media (min-width: 560px) {
-    .ticks { grid-template-columns: 1fr 1fr; }
-  }
-  @media (min-width: 760px) {
-    .steps { grid-template-columns: 1fr 1fr; }
-    .math-grid { grid-template-columns: 1fr 1fr; align-items: center; }
-    .offer-grid { grid-template-columns: 1.1fr 0.9fr; align-items: stretch; }
-    footer { padding-bottom: 40px; }
-    .sticky-cta { display: none; }
-  }
-  @media (min-width: 960px) {
-    .hero { grid-template-columns: 1.05fr 0.95fr; padding: 56px 0 90px; }
-    .steps { grid-template-columns: repeat(4, 1fr); }
-    .step p { font-size: 0.92rem; }
-  }
+  .sticky-cta.show { transform: none; }
+  .sticky-cta .btn { display: block; text-align: center; }
+  @media (max-width: 759px) { .sticky-cta { display: block; } }
 
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
@@ -606,41 +514,46 @@
 </head>
 <body>
 
-<header class="wrap topbar">
-  <div class="wordmark">
-    <svg class="logo" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#ff8c33"/><stop offset="1" stop-color="#ff6a00"/>
-      </linearGradient></defs>
-      <rect width="64" height="64" rx="15" fill="url(#lg)"/>
-      <path d="M32 13c-10.5 0-19 7.2-19 16.1 0 5.1 2.8 9.6 7.2 12.5-.3 2.4-1.3 4.6-3 6.3 3.4-.2 6.5-1.4 9-3.3 1.8.5 3.8.7 5.8.7 10.5 0 19-7.2 19-16.2S42.5 13 32 13z" fill="#fff"/>
-      <path d="M34.6 17.8l-8.2 12.4h5.4l-2.4 9.9 8.8-12.9h-5.5l1.9-9.4z" fill="#ff6a00"/>
-    </svg>
-    <span>LeadRecovery<em>AI</em></span>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="wordmark" href="#top">
+      <svg class="logo" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#4f7fdd"/><stop offset="1" stop-color="#1d56c9"/>
+        </linearGradient></defs>
+        <rect width="64" height="64" rx="15" fill="url(#lg)"/>
+        <path d="M32 13c-10.5 0-19 7.2-19 16.1 0 5.1 2.8 9.6 7.2 12.5-.3 2.4-1.3 4.6-3 6.3 3.4-.2 6.5-1.4 9-3.3 1.8.5 3.8.7 5.8.7 10.5 0 19-7.2 19-16.2S42.5 13 32 13z" fill="#fff"/>
+        <path d="M34.6 17.8l-8.2 12.4h5.4l-2.4 9.9 8.8-12.9h-5.5l1.9-9.4z" fill="#1d56c9"/>
+      </svg>
+      <span>Pola<em>Comms</em></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#demo">Live Demo</a>
+      <a href="#how">How It Works</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <a class="top-cta" href="https://cal.com/lead-recovery-ai-lxlvl3/20min" target="_blank" rel="noopener">Book a Call</a>
   </div>
-  <a class="top-cta" href="https://cal.com/lead-recovery-ai-lxlvl3/20min" target="_blank" rel="noopener">Book a Demo</a>
 </header>
 
-<main>
+<main id="top">
 
   <!-- ============ HERO ============ -->
-  <section class="hero wrap" id="top">
-    <div>
-      <span class="hero-badge"><span class="rdot" aria-hidden="true"></span> AI automation for HVAC &amp; home-service companies</span>
-      <h1>Your front office,<br><span class="accent">fully automated.</span></h1>
-      <p class="sub">Every call answered. Every missed caller texted back in seconds. Every lead qualified, followed up, and booked &mdash; while you and your crew stay on the job. We build and run the whole system for you.</p>
-      <ul class="ticks">
-        <li><span class="tick" aria-hidden="true">&#10003;</span> AI answers &amp; texts your callers 24/7</li>
-        <li><span class="tick" aria-hidden="true">&#10003;</span> Qualifies every lead and books the estimate</li>
-        <li><span class="tick" aria-hidden="true">&#10003;</span> Automatic follow-ups, reminders &amp; review requests</li>
-        <li><span class="tick" aria-hidden="true">&#10003;</span> One text to you with every lead's summary</li>
-      </ul>
-      <a class="btn btn-block" href="https://cal.com/lead-recovery-ai-lxlvl3/20min" target="_blank" rel="noopener">Book a 30-Minute Demo</a>
-      <span class="micro">30 minutes. I'll run it live with your company's name on it &mdash; you can play the customer and try to break it. No pressure.</span>
-      <p class="hero-point">&darr; Watch it handle a real missed call</p>
+  <section class="hero">
+    <div class="hero-in">
+      <span class="hero-badge"><span class="rdot" aria-hidden="true"></span> AI messaging for HVAC &amp; home-service companies</span>
+      <h1>Never lose another lead to a missed call.</h1>
+      <p class="sub">When a call rings out at your shop, our AI agent texts the caller back within seconds &mdash; qualifies the job, books the appointment, and sends you the lead. Nobody calls your competitor.</p>
+      <a class="btn btn-light" href="https://cal.com/lead-recovery-ai-lxlvl3/20min" target="_blank" rel="noopener">Book a Call</a>
+      <span class="micro">30 minutes. We'll run it live with your company's name on it.</span>
+      <div class="hero-scroll">&darr; Watch it handle a real missed call</div>
     </div>
+  </section>
 
-    <!-- ============ PHONE DEMO ============ -->
+  <!-- ============ LIVE DEMO ============ -->
+  <section class="demo-band" id="demo">
+    <h2>Watch it work.</h2>
+    <p class="sub">This is the exact conversation your missed callers get &mdash; live, on a loop.</p>
     <div class="phone-wrap">
       <span class="live-badge"><span class="rdot" aria-hidden="true"></span>WATCH IT WORK</span>
       <div class="phone" role="img" aria-label="Demo of a text conversation: after a missed call at 2:47 PM, the assistant texts the caller back, learns their AC died in 100-degree heat, gets the zip code 75023, sends a booking link, and notifies the owner: AC repair, emergency, 75023.">
@@ -662,7 +575,6 @@
             </div>
           </div>
           <div class="chat" id="chat" aria-hidden="true">
-            <!-- Static fallback (shown if JS is off; JS clears and animates) -->
             <div class="evt">Missed Call - 2:47 PM</div>
             <div class="msg ai">Hi, this is the assistant for Demo Heating &amp; Air - sorry we missed your call! What's going on with your system?</div>
             <div class="msg cust">AC died. its 100 degrees in here</div>
@@ -683,148 +595,169 @@
           <div class="home-ind" aria-hidden="true"></div>
         </div>
       </div>
-      <p class="demo-note">Runs on a loop. This is the exact flow your missed callers get.</p>
+      <p class="demo-note">Runs on a loop. On a live call, you can play the customer and try to break it.</p>
     </div>
   </section>
 
-  <!-- ============ THE FULL SYSTEM ============ -->
-  <section class="section-dark" id="system">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">The full system</span>
-        <h2>One system. Your whole customer pipeline.</h2>
-        <p class="sub">We install it in phases &mdash; missed-call recovery goes live in week one, the rest rolls out over your first month.</p>
+  <!-- ============ NARRATIVE ============ -->
+  <section class="narrative">
+    <div class="narrow">
+      <h2>A different approach to missed calls.</h2>
+      <p>Most callers who hit voicemail never leave a message. They hang up, go back to Google, and book whoever answers first. Those jobs disappear without a trace &mdash; no report ever shows you the customers who gave up on you.</p>
+      <p><strong>We close that gap with speed.</strong> The moment a call rings out, our AI agent is already texting the caller &mdash; answering, qualifying, and booking &mdash; while your competitor's phone is still ringing.</p>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES — navy glass cards ============ -->
+  <section class="features">
+    <h2>Great lead recovery doesn't happen by accident.</h2>
+    <p class="sub">It's the result of a system that guides every missed caller naturally toward a booked appointment. Here's what runs for you around the clock.</p>
+    <div class="feature-grid">
+      <div class="fcard">
+        <div class="ficon">⚡</div>
+        <h3>Instant text-back</h3>
+        <p>Every missed caller gets a text within seconds &mdash; 24/7, nights, weekends, both lines busy.</p>
       </div>
-      <div class="steps">
-        <div class="step">
-          <div class="step-num">1</div>
-          <h3>Every call answered</h3>
-          <p>An AI receptionist picks up 24/7 &mdash; after hours, weekends, both-lines-busy. <em>"I'd be happy to schedule that &mdash; let me get a few details so we can find the best time for a technician to come out."</em> No caller ever hits a dead end again.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">2</div>
-          <h3>Missed-call recovery</h3>
-          <p>Anything that does slip through gets a text within seconds &mdash; qualified, booked, and reported back to you. That's the demo playing above.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">3</div>
-          <h3>Automatic follow-ups</h3>
-          <p>Quotes chased, no-shows rebooked, check-in texts and emails sent &mdash; the money that hides in leads nobody had time to call back.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">4</div>
-          <h3>Reminders &amp; reviews</h3>
-          <p>Appointment reminders that cut no-shows, and review requests that go out after every finished job &mdash; on autopilot.</p>
-        </div>
+      <div class="fcard">
+        <div class="ficon">🎯</div>
+        <h3>Real qualification</h3>
+        <p>What's broken, how urgent, what zip &mdash; the AI asks the right questions and filters out the spam.</p>
       </div>
-      <div class="safety" style="margin-top: 28px;">
-        <span class="icon" aria-hidden="true">📊</span>
-        <p><strong>And you see all of it.</strong> Your dashboard shows every call the AI took, every lead it caught, every job it booked, and the hours it saved your team &mdash; so every month, the system proves exactly what it's worth.</p>
+      <div class="fcard">
+        <div class="ficon">📅</div>
+        <h3>Booked appointments</h3>
+        <p>Qualified callers get your booking link and land straight on your calendar as estimates.</p>
+      </div>
+      <div class="fcard">
+        <div class="ficon">📊</div>
+        <h3>Your dashboard</h3>
+        <p>Every call caught, every lead qualified, every job booked &mdash; the system proves its worth every month.</p>
       </div>
     </div>
   </section>
 
-  <!-- ============ HOW IT WORKS ============ -->
-  <section id="how">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Watch one automation work</span>
-        <h2>Four steps. Zero apps to learn.</h2>
-        <p class="sub">No new number, no app, nothing to install. Setup is a five-minute call-forwarding change I walk you through once.</p>
+  <!-- ============ HOW IT WORKS — gray steps ============ -->
+  <section class="process" id="how">
+    <h2>Four steps. Zero apps to learn.</h2>
+    <p class="sub">No new number, no app, nothing to install. Setup is a five-minute call-forwarding change we walk you through once.</p>
+    <div class="step-grid">
+      <div class="scard">
+        <div class="snum">1</div>
+        <h3>A call gets missed</h3>
+        <p>You're under a house or on a roof. The phone rings out. Normally that's the last you hear from them.</p>
       </div>
-      <div class="steps">
-        <div class="step">
-          <div class="step-num">1</div>
-          <h3>A call gets missed</h3>
-          <p>You're under a house or on a roof. The phone rings out. Normally that's the last you ever hear from them.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">2</div>
-          <h3>The text goes out in seconds</h3>
-          <p>The caller gets a text back while your competitor's phone is still ringing. They know you saw them.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">3</div>
-          <h3>It asks the right questions</h3>
-          <p>What's broken. How urgent. What zip code. It never quotes prices and never promises arrival times &mdash; that's your call, not a computer's.</p>
-        </div>
-        <div class="step">
-          <div class="step-num">4</div>
-          <h3>You get the lead</h3>
-          <p>The caller gets a booking link for an estimate. You get one text: what's broken, how bad, where. Call back when you're off the roof.</p>
-        </div>
+      <div class="scard">
+        <div class="snum">2</div>
+        <h3>The text goes out</h3>
+        <p>The caller gets a text back in seconds &mdash; while your competitor's phone is still ringing.</p>
       </div>
-      <div class="safety">
-        <span class="icon" aria-hidden="true">⚠️</span>
-        <p><strong>Safety comes first.</strong> If a caller mentions a gas smell, the system drops everything to tell them to shut it off, get out, and call 911 first. Booking can wait. Safety can't.</p>
+      <div class="scard">
+        <div class="snum">3</div>
+        <h3>The AI qualifies</h3>
+        <p>What's broken. How urgent. What zip. It never quotes prices and never promises arrival times.</p>
       </div>
+      <div class="scard">
+        <div class="snum">4</div>
+        <h3>You get the lead</h3>
+        <p>They book an estimate. You get one text: what's broken, how bad, where. Call back when you're off the roof.</p>
+      </div>
+    </div>
+    <div class="rules">
+      <div class="rule-item"><span class="x" aria-hidden="true">✕</span><span><strong>Never quotes your prices.</strong> Pricing is your business &mdash; it books the estimate and gets out of the way.</span></div>
+      <div class="rule-item"><span class="x" aria-hidden="true">✕</span><span><strong>Never promises arrival times.</strong> It won't commit your trucks to anything.</span></div>
+      <div class="rule-item"><span class="x" aria-hidden="true">✕</span><span><strong>Never pretends to be you.</strong> It says it's your company's assistant. No games.</span></div>
+      <div class="rule-item"><span class="x" aria-hidden="true">✕</span><span><strong>Never replaces your people.</strong> It hands you a qualified lead &mdash; humans do the actual work.</span></div>
     </div>
   </section>
 
   <!-- ============ THE MATH ============ -->
-  <section id="math">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">The math</span>
-        <h2>One missed call can be a $5,000&ndash;$12,000 job.</h2>
-        <p class="sub">How many calls rang out at your shop last week?</p>
+  <section class="math">
+    <h2>One missed call can be a $5,000&ndash;$12,000 job.</h2>
+    <p class="sub">How many calls rang out at your shop last week?</p>
+    <div class="math-grid">
+      <div class="big-number-card">
+        <div class="big-number">$5,000&ndash;$12,000</div>
+        <p class="big-number-label">What a single missed AC-replacement call can be worth. In a Texas summer, those are exactly the calls flooding in.</p>
       </div>
-      <div class="math-grid">
-        <div class="big-number-card">
-          <div class="big-number">$5,000&ndash;$12,000</div>
-          <p class="big-number-label">What a single missed AC-replacement call can be worth. And in a Texas summer, those are exactly the calls flooding in.</p>
-        </div>
-        <div>
-          <ul class="math-points">
-            <li><strong>Ask around &mdash; most homeowners hire whoever responds first.</strong> Not whoever's best. First.</li>
-            <li><strong>Most callers who hit voicemail don't leave a message.</strong> They hang up and dial the next company on Google.</li>
-            <li>You don't lose those jobs on price or quality. <strong>You lose them on speed</strong> &mdash; while you're busy doing good work for somebody else.</li>
-          </ul>
-          <p class="math-kicker">This doesn't have to catch every call. If it catches one job a year you would've lost, the math takes care of itself.</p>
-        </div>
+      <div>
+        <ul class="math-points">
+          <li><strong>Most homeowners hire whoever responds first.</strong> Not whoever's best. First.</li>
+          <li><strong>Most callers who hit voicemail don't leave a message.</strong> They dial the next company on Google.</li>
+          <li>You don't lose those jobs on price or quality. <strong>You lose them on speed.</strong></li>
+        </ul>
+        <p class="math-kicker">If it catches one job a year you would've lost, the math takes care of itself.</p>
       </div>
     </div>
   </section>
 
-  <!-- ============ WHAT IT WON'T DO ============ -->
-  <section class="section-dark" id="wont">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Straight talk</span>
-        <h2>What it will never do</h2>
-        <p class="sub">You've been burned by marketing guys before. So here are the hard rules built into the system.</p>
-      </div>
-      <div class="wont">
-        <div class="wont-item"><span class="x" aria-hidden="true">✕</span><span><strong>Never quotes your prices.</strong> Pricing is your business. It books the estimate and gets out of the way.</span></div>
-        <div class="wont-item"><span class="x" aria-hidden="true">✕</span><span><strong>Never promises arrival times.</strong> It won't commit your trucks to anything. You set the schedule.</span></div>
-        <div class="wont-item"><span class="x" aria-hidden="true">✕</span><span><strong>Never pretends to be you.</strong> It says it's the assistant for your company. No games.</span></div>
-        <div class="wont-item"><span class="x" aria-hidden="true">✕</span><span><strong>Never replaces your people.</strong> It hands you a qualified lead. Humans do the actual work.</span></div>
-      </div>
+  <!-- ============ PRICING ============ -->
+  <section class="pricing" id="pricing">
+    <h2>One flat price. Everything included.</h2>
+    <div class="price-card">
+      <div class="price-big">$850<span>/month</span></div>
+      <div class="price-tag">No setup fee &middot; No contract &middot; Cancel anytime</div>
+      <ul class="price-list">
+        <li><span class="tick">&#10003;</span> AI text-back on every missed call, 24/7</li>
+        <li><span class="tick">&#10003;</span> Every lead qualified and booked on your calendar</li>
+        <li><span class="tick">&#10003;</span> Instant lead summaries texted to you</li>
+        <li><span class="tick">&#10003;</span> Dashboard with every call, lead, and booking</li>
+        <li><span class="tick">&#10003;</span> Setup, monitoring, and support &mdash; done for you</li>
+      </ul>
+      <a class="btn" href="https://cal.com/lead-recovery-ai-lxlvl3/20min" target="_blank" rel="noopener">Book a 30-Minute Demo</a>
+      <p class="price-note">One recovered job usually pays for months of it. That's the whole point.</p>
     </div>
   </section>
 
   <!-- ============ FINAL CTA ============ -->
-  <section class="final-cta section-dark">
-    <div class="wrap">
-      <h2>Your phone will ring this week.<br><span class="accent">Will you catch it?</span></h2>
-      <p class="sub">Somebody's going to miss that call &mdash; you or your competitor. Half an hour tells you if this is worth having.</p>
-      <a class="btn btn-block" href="https://cal.com/lead-recovery-ai-lxlvl3/20min" target="_blank" rel="noopener">Book a 30-Minute Demo</a>
-    </div>
+  <section class="final-cta">
+    <h2>Considering AI lead recovery for your business?</h2>
+    <p class="sub">Schedule a time &mdash; we'll run the system live with your company's name on it, and you can try to break it.</p>
+    <a class="btn btn-light" href="https://cal.com/lead-recovery-ai-lxlvl3/20min" target="_blank" rel="noopener">Book a Call</a>
+    <span class="micro">Your phone will ring this week. Will you catch it?</span>
   </section>
 
 </main>
 
 <footer>
-  <div class="wrap foot-grid">
-    <div><strong>LeadRecovery AI</strong> &mdash; AI automation for HVAC &amp; home-service companies.</div>
-    <div>Questions? Call or text <a href="tel:+12146691461">(214) 669-1461</a> &middot; <a href="mailto:leadrecovery947@gmail.com">leadrecovery947@gmail.com</a></div>
-    <div>Follow us: <a href="https://www.instagram.com/leadrecoveryai/" target="_blank" rel="noopener">Instagram</a> &middot; <a href="https://www.facebook.com/profile.php?id=61592209092306" target="_blank" rel="noopener">Facebook</a></div>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <span class="wordmark">
+        <svg class="logo" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs><linearGradient id="lgf" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#4f7fdd"/><stop offset="1" stop-color="#1d56c9"/>
+          </linearGradient></defs>
+          <rect width="64" height="64" rx="15" fill="url(#lgf)"/>
+          <path d="M32 13c-10.5 0-19 7.2-19 16.1 0 5.1 2.8 9.6 7.2 12.5-.3 2.4-1.3 4.6-3 6.3 3.4-.2 6.5-1.4 9-3.3 1.8.5 3.8.7 5.8.7 10.5 0 19-7.2 19-16.2S42.5 13 32 13z" fill="#fff"/>
+          <path d="M34.6 17.8l-8.2 12.4h5.4l-2.4 9.9 8.8-12.9h-5.5l1.9-9.4z" fill="#1d56c9"/>
+        </svg>
+        <span>Pola<em>Comms</em></span>
+      </span>
+      <p>AI lead recovery for HVAC &amp; home-service companies. Every missed call texted back, qualified, and booked &mdash; automatically.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#demo">Live Demo</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="https://cal.com/lead-recovery-ai-lxlvl3/20min" target="_blank" rel="noopener">Book a Call</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+12146691461">(214) 669-1461</a></li>
+        <li><a href="mailto:leadrecovery947@gmail.com">leadrecovery947@gmail.com</a></li>
+        <li><a href="https://www.instagram.com/leadrecoveryai/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61592209092306" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
   </div>
 </footer>
 
 <!-- Sticky mobile CTA -->
 <div class="sticky-cta" id="stickyCta">
-  <a class="btn" href="https://cal.com/lead-recovery-ai-lxlvl3/20min" target="_blank" rel="noopener">Book a 30-Minute Demo</a>
+  <a class="btn" href="https://cal.com/lead-recovery-ai-lxlvl3/20min" target="_blank" rel="noopener">Book a Call</a>
 </div>
 
 <script>
@@ -837,7 +770,6 @@
 
   var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // Sticky CTA: show once the hero is scrolled past (mobile only via CSS)
   var sticky = document.getElementById("stickyCta");
   var hero = document.querySelector(".hero");
   if ("IntersectionObserver" in window && sticky && hero) {
@@ -848,17 +780,13 @@
 
   if (!chat || !notif) return;
 
-  // Reduced motion: keep the static fallback conversation, show the banner, done.
   if (reduced) {
     notif.classList.add("show");
     return;
   }
 
-  // JS is running and motion is allowed: clear the no-JS fallback right away
-  // so the demo always starts from a clean thread (no flash of the full convo).
   chat.innerHTML = "";
 
-  // Only animate while the phone is on screen (saves battery, keeps loop in sync with viewer)
   var inView = true;
   if ("IntersectionObserver" in window && phone) {
     inView = false;
@@ -914,42 +842,35 @@
     addEvent("Missed Call - 2:47 PM");
     await sleep(1100);
 
-    // AI message 1
     var t = showTyping();
     await sleep(1500);
     t.remove();
     addMsg("ai", AI_1);
     await sleep(1700);
 
-    // Customer reply 1 (delay = them typing; no indicator — SMS doesn't show one)
     await sleep(1500);
     addMsg("cust", CUST_1);
     await sleep(900);
 
-    // AI message 2
     t = showTyping();
     await sleep(1300);
     t.remove();
     addMsg("ai", AI_2);
     await sleep(1400);
 
-    // Customer reply 2
     await sleep(1100);
     addMsg("cust", CUST_2);
     await sleep(900);
 
-    // AI message 3 with booking link
     t = showTyping();
     await sleep(1400);
     t.remove();
     addMsg("ai", AI_3);
     await sleep(1400);
 
-    // Owner notification banner
     notif.classList.add("show");
-    await sleep(3000); // hold the finished conversation
+    await sleep(3000);
 
-    // Soft reset: fade the thread out instead of yanking it away
     chat.classList.add("fade");
     notif.classList.remove("show");
     await sleep(450);
