@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Pola Comms — an AI agent that texts your missed callers back in seconds, qualifies the job, and books the appointment. For HVAC & home-service companies. $850/month flat.">
+<meta name="description" content="Pola Comms — AI receptionists for HVAC & home-service companies. Every call answered 24/7, every caller qualified, every job booked straight into your schedule.">
 <meta name="theme-color" content="#142952">
-<title>Pola Comms — AI Lead Recovery for Home-Service Companies</title>
+<title>Pola Comms — AI Receptionists for Home-Service Companies</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234f7fdd'/%3E%3Cstop offset='1' stop-color='%231d56c9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='15' fill='url(%23g)'/%3E%3Cpath d='M32 13c-10.5 0-19 7.2-19 16.1 0 5.1 2.8 9.6 7.2 12.5-.3 2.4-1.3 4.6-3 6.3 3.4-.2 6.5-1.4 9-3.3 1.8.5 3.8.7 5.8.7 10.5 0 19-7.2 19-16.2S42.5 13 32 13z' fill='%23fff'/%3E%3Cpath d='M34.6 17.8l-8.2 12.4h5.4l-2.4 9.9 8.8-12.9h-5.5l1.9-9.4z' fill='%231d56c9'/%3E%3C/svg%3E">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -400,7 +400,7 @@
   .scard h3 { margin-bottom: 8px; }
   .scard p { color: var(--muted); font-size: 0.94rem; }
   @media (min-width: 640px) { .step-grid { grid-template-columns: 1fr 1fr; } }
-  @media (min-width: 960px) { .step-grid { grid-template-columns: repeat(4, 1fr); } }
+  @media (min-width: 960px) { .step-grid { grid-template-columns: repeat(3, 1fr); } }
   .rules { max-width: 720px; margin: 44px auto 0; display: grid; gap: 10px; text-align: left; }
   .rule-item {
     display: flex;
@@ -528,9 +528,8 @@
       <span>Pola<em>Comms</em></span>
     </a>
     <nav class="nav-links">
-      <a href="#demo">Live Demo</a>
-      <a href="#how">How It Works</a>
-      <a href="#pricing">Pricing</a>
+      <a href="#features">What It Does</a>
+      <a href="#managed">Fully Managed</a>
     </nav>
     <a class="top-cta" href="https://cal.com/lead-recovery-ai-lxlvl3/20min" target="_blank" rel="noopener">Book a Call</a>
   </div>
@@ -541,127 +540,80 @@
   <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="hero-in">
-      <span class="hero-badge"><span class="rdot" aria-hidden="true"></span> AI messaging for HVAC &amp; home-service companies</span>
-      <h1>Never lose another lead to a missed call.</h1>
-      <p class="sub">When a call rings out at your shop, our AI agent texts the caller back within seconds &mdash; qualifies the job, books the appointment, and sends you the lead. Nobody calls your competitor.</p>
+      <span class="hero-badge"><span class="rdot" aria-hidden="true"></span> AI receptionists for HVAC &amp; home-service companies</span>
+      <h1>Your calls, answered.<br>Your jobs, booked.</h1>
+      <p class="sub">An AI receptionist that picks up every call, 24/7 &mdash; qualifies the caller, filters the spam, and books the job straight into your schedule. You get a text summary of every lead. Nobody hits voicemail. Nobody calls your competitor.</p>
       <a class="btn btn-light" href="https://cal.com/lead-recovery-ai-lxlvl3/20min" target="_blank" rel="noopener">Book a Call</a>
-      <span class="micro">30 minutes. We'll run it live with your company's name on it.</span>
-      <div class="hero-scroll">&darr; Watch it handle a real missed call</div>
-    </div>
-  </section>
-
-  <!-- ============ LIVE DEMO ============ -->
-  <section class="demo-band" id="demo">
-    <h2>Watch it work.</h2>
-    <p class="sub">This is the exact conversation your missed callers get &mdash; live, on a loop.</p>
-    <div class="phone-wrap">
-      <span class="live-badge"><span class="rdot" aria-hidden="true"></span>WATCH IT WORK</span>
-      <div class="phone" role="img" aria-label="Demo of a text conversation: after a missed call at 2:47 PM, the assistant texts the caller back, learns their AC died in 100-degree heat, gets the zip code 75023, sends a booking link, and notifies the owner: AC repair, emergency, 75023.">
-        <div class="screen">
-          <div class="notch" aria-hidden="true"></div>
-          <div class="statusbar" aria-hidden="true">
-            <span>2:47</span>
-            <span class="sb-right">
-              <span class="sig"><i></i><i></i><i></i><i></i></span>
-              <span class="net">5G</span>
-              <span class="batt"><i></i></span>
-            </span>
-          </div>
-          <div class="convo-head" aria-hidden="true">
-            <div class="avatar">🔧</div>
-            <div>
-              <div class="c-name">Demo Heating &amp; Air</div>
-              <div class="c-sub">Text Message &middot; SMS</div>
-            </div>
-          </div>
-          <div class="chat" id="chat" aria-hidden="true">
-            <div class="evt">Missed Call - 2:47 PM</div>
-            <div class="msg ai">Hi, this is the assistant for Demo Heating &amp; Air - sorry we missed your call! What's going on with your system?</div>
-            <div class="msg cust">AC died. its 100 degrees in here</div>
-            <div class="msg ai">No AC in this heat is an emergency. What zip code are you in?</div>
-            <div class="msg cust">75023</div>
-            <div class="msg ai">You're covered. Grab a time here and the owner will follow up shortly: <span class="sms-link">demoheating.com/book</span></div>
-          </div>
-          <div class="notif" id="notif" aria-hidden="true">
-            <div class="notif-icon">🔔</div>
-            <div>
-              <div class="notif-title">Owner notified</div>
-              <div class="notif-text">AC repair - emergency - 75023</div>
-            </div>
-          </div>
-          <div class="input-bar" aria-hidden="true">
-            <div class="fake-input">Text Message</div>
-          </div>
-          <div class="home-ind" aria-hidden="true"></div>
-        </div>
-      </div>
-      <p class="demo-note">Runs on a loop. On a live call, you can play the customer and try to break it.</p>
+      <span class="micro">Or just call / text us directly: <a href="tel:+12146691461" style="color:#fff;font-weight:800;">(214) 669-1461</a></span>
     </div>
   </section>
 
   <!-- ============ NARRATIVE ============ -->
   <section class="narrative">
     <div class="narrow">
-      <h2>A different approach to missed calls.</h2>
+      <h2>A different approach to your front desk.</h2>
       <p>Most callers who hit voicemail never leave a message. They hang up, go back to Google, and book whoever answers first. Those jobs disappear without a trace &mdash; no report ever shows you the customers who gave up on you.</p>
-      <p><strong>We close that gap with speed.</strong> The moment a call rings out, our AI agent is already texting the caller &mdash; answering, qualifying, and booking &mdash; while your competitor's phone is still ringing.</p>
+      <p><strong>We make sure your phone simply gets answered.</strong> Every call, every hour, every day &mdash; even two at once &mdash; handled by a receptionist that qualifies the caller and guides them straight to a booked appointment.</p>
     </div>
   </section>
 
   <!-- ============ FEATURES — navy glass cards ============ -->
-  <section class="features">
-    <h2>Great lead recovery doesn't happen by accident.</h2>
-    <p class="sub">It's the result of a system that guides every missed caller naturally toward a booked appointment. Here's what runs for you around the clock.</p>
+  <section class="features" id="features">
+    <h2>Great phone experiences don't happen by accident.</h2>
+    <p class="sub">They're the result of a receptionist that guides every conversation naturally toward the right outcome &mdash; a booked job. Here's what answers for you around the clock.</p>
     <div class="feature-grid">
       <div class="fcard">
-        <div class="ficon">⚡</div>
-        <h3>Instant text-back</h3>
-        <p>Every missed caller gets a text within seconds &mdash; 24/7, nights, weekends, both lines busy.</p>
+        <div class="ficon">📞</div>
+        <h3>Answers every call</h3>
+        <p>24/7 &mdash; nights, weekends, and even multiple calls at the same time. No caller ever hits a dead end.</p>
       </div>
       <div class="fcard">
         <div class="ficon">🎯</div>
-        <h3>Real qualification</h3>
-        <p>What's broken, how urgent, what zip &mdash; the AI asks the right questions and filters out the spam.</p>
+        <h3>Qualifies &amp; filters</h3>
+        <p>What's broken, how urgent, what zip &mdash; real questions asked naturally, with spam and robocalls screened out.</p>
       </div>
       <div class="fcard">
         <div class="ficon">📅</div>
-        <h3>Booked appointments</h3>
-        <p>Qualified callers get your booking link and land straight on your calendar as estimates.</p>
+        <h3>Books the job</h3>
+        <p>Qualified callers land straight on your schedule as booked estimates &mdash; not messages waiting for a callback.</p>
+      </div>
+      <div class="fcard">
+        <div class="ficon">📲</div>
+        <h3>You get the summary</h3>
+        <p>One text per lead: who called, what's wrong, how urgent, where. Read it when you're off the roof.</p>
       </div>
     </div>
   </section>
 
   <!-- ============ HOW IT WORKS — gray steps ============ -->
-  <section class="process" id="how">
-    <h2>Four steps. Zero apps to learn.</h2>
-    <p class="sub">No new number, no app, nothing to install. Setup is a five-minute call-forwarding change we walk you through once.</p>
+  <section class="process" id="managed">
+    <h2>Your receptionist, fully managed.</h2>
+    <p class="sub">We operate the whole system for you &mdash; you run your company, it runs your phone. No new number, no app, nothing to learn.</p>
     <div class="step-grid">
       <div class="scard">
-        <div class="snum">1</div>
-        <h3>A call gets missed</h3>
-        <p>You're under a house or on a roof. The phone rings out. Normally that's the last you hear from them.</p>
+        <h3>Built around your business</h3>
+        <p>Trained on your services, your service area, your hours &mdash; it sounds like it works at your shop, because it does.</p>
       </div>
       <div class="scard">
-        <div class="snum">2</div>
-        <h3>The text goes out</h3>
-        <p>The caller gets a text back in seconds &mdash; while your competitor's phone is still ringing.</p>
+        <h3>Setup done for you</h3>
+        <p>We build it, test it, and launch it. Your entire part is a five-minute call-forwarding change we walk you through once.</p>
       </div>
       <div class="scard">
-        <div class="snum">3</div>
-        <h3>The AI qualifies</h3>
-        <p>What's broken. How urgent. What zip. It never quotes prices and never promises arrival times.</p>
+        <h3>Never oversteps</h3>
+        <p>Never quotes your prices. Never promises arrival times. Never commits your trucks. Those calls stay yours.</p>
       </div>
       <div class="scard">
-        <div class="snum">4</div>
-        <h3>You get the lead</h3>
-        <p>They book an estimate. You get one text: what's broken, how bad, where. Call back when you're off the roof.</p>
+        <h3>Honest with callers</h3>
+        <p>It introduces itself as your company's assistant &mdash; no games &mdash; and puts safety first on anything dangerous.</p>
       </div>
-    </div>
-    <div class="rules">
-      <div class="rule-item"><span class="x" aria-hidden="true">✕</span><span><strong>Never quotes your prices.</strong> Pricing is your business &mdash; it books the estimate and gets out of the way.</span></div>
-      <div class="rule-item"><span class="x" aria-hidden="true">✕</span><span><strong>Never promises arrival times.</strong> It won't commit your trucks to anything.</span></div>
-      <div class="rule-item"><span class="x" aria-hidden="true">✕</span><span><strong>Never pretends to be you.</strong> It says it's your company's assistant. No games.</span></div>
-      <div class="rule-item"><span class="x" aria-hidden="true">✕</span><span><strong>Never replaces your people.</strong> It hands you a qualified lead &mdash; humans do the actual work.</span></div>
+      <div class="scard">
+        <h3>Monitored &amp; tuned</h3>
+        <p>We review how it handles your real calls and keep sharpening it &mdash; it gets better at your business every week.</p>
+      </div>
+      <div class="scard">
+        <h3>No lock-in</h3>
+        <p>Month-to-month. Cancel anytime. Your phone number stays yours, always.</p>
+      </div>
     </div>
   </section>
 
@@ -685,29 +637,12 @@
     </div>
   </section>
 
-  <!-- ============ PRICING ============ -->
-  <section class="pricing" id="pricing">
-    <h2>One flat price. Everything included.</h2>
-    <div class="price-card">
-      <div class="price-big">$850<span>/month</span></div>
-      <div class="price-tag">No setup fee &middot; No contract &middot; Cancel anytime</div>
-      <ul class="price-list">
-        <li><span class="tick">&#10003;</span> AI text-back on every missed call, 24/7</li>
-        <li><span class="tick">&#10003;</span> Every lead qualified and booked on your calendar</li>
-        <li><span class="tick">&#10003;</span> Instant lead summaries texted to you</li>
-        <li><span class="tick">&#10003;</span> Setup, monitoring, and support &mdash; done for you</li>
-      </ul>
-      <a class="btn" href="https://cal.com/lead-recovery-ai-lxlvl3/20min" target="_blank" rel="noopener">Book a 30-Minute Demo</a>
-      <p class="price-note">One recovered job usually pays for months of it. That's the whole point.</p>
-    </div>
-  </section>
-
   <!-- ============ FINAL CTA ============ -->
   <section class="final-cta">
-    <h2>Considering AI lead recovery for your business?</h2>
+    <h2>Considering an AI receptionist for your business?</h2>
     <p class="sub">Schedule a time &mdash; we'll run the system live with your company's name on it, and you can try to break it.</p>
     <a class="btn btn-light" href="https://cal.com/lead-recovery-ai-lxlvl3/20min" target="_blank" rel="noopener">Book a Call</a>
-    <span class="micro">Your phone will ring this week. Will you catch it?</span>
+    <span class="micro">Or call / text us: <a href="tel:+12146691461" style="color:#b9c6e2;font-weight:800;">(214) 669-1461</a> &mdash; your phone will ring this week. Will you catch it?</span>
   </section>
 
 </main>
@@ -726,14 +661,13 @@
         </svg>
         <span>Pola<em>Comms</em></span>
       </span>
-      <p>AI lead recovery for HVAC &amp; home-service companies. Every missed call texted back, qualified, and booked &mdash; automatically.</p>
+      <p>AI receptionists for HVAC &amp; home-service companies. Every call answered, every caller qualified, every job booked &mdash; automatically.</p>
     </div>
     <div class="foot-col">
       <h4>Explore</h4>
       <ul>
-        <li><a href="#demo">Live Demo</a></li>
-        <li><a href="#how">How It Works</a></li>
-        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#features">What It Does</a></li>
+        <li><a href="#managed">Fully Managed</a></li>
         <li><a href="https://cal.com/lead-recovery-ai-lxlvl3/20min" target="_blank" rel="noopener">Book a Call</a></li>
       </ul>
     </div>
